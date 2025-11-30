@@ -9,10 +9,10 @@ pipeline{
     }
 
     stages{
-        stage('Fetch Code'){
-            steps{
-                git branch: 'main', url: 'git@github.com:msrajput8894/vprofile.git'     
-                }
+        stage('Fetch Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/msrajput8894/vprofile.git'
+            }
         }
         stage('Unit Test'){
             steps{
